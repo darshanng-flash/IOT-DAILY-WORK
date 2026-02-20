@@ -1,5 +1,4 @@
-package DAY2;
-//armstong//
+package day2;
 
 public class prg1 {
     public static void main(String[] args) {
