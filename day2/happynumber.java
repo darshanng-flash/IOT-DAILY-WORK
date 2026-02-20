@@ -4,7 +4,7 @@ public class happynumber {
     public static void main(String[] args) {
         int num=19;
         int temp=num;
-        while (temp>9){
+        while (temp!=1&& temp!=4){
             int sum=0;
             while (temp>0){
                 int digit=temp%10;
@@ -14,6 +14,8 @@ public class happynumber {
             temp=sum;
         }
         if(temp==1)
-        System.out.println("Happy Number");
+        System.out.println("Happy");
+        else
+        System.out.println("Not Happy ");
     }
 }

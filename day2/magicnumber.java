@@ -1,3 +1,5 @@
+package day2;
+
 public class magicnumber {
     public static void main(String[] args){
         int num=18;
