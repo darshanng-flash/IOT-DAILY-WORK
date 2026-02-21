@@ -3,13 +3,16 @@ package day3;
 interface School{
     void SchoolName();
 }
-class Student{
+
+// Renamed to avoid clashing with other Student classes in package day3
+class HybridStudent{
     String name;
-    Student(String name){
+    HybridStudent(String name){
         this.name=name;
     }
 }
-class ClassISE extends Student implements School{
+
+class ClassISE extends HybridStudent implements School{
     int roll;
     ClassISE(String name, int roll){
         super(name);
