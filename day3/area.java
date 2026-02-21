@@ -32,6 +32,7 @@ public class area {
         Triangle t=new Triangle(10,20,30);
         Rectangle r=new Rectangle(10,20);
         System.out.println("Area of triangle: "+t.tri());
+        
         System.out.println("Area of rectangle: "+r.area());
         System.out.println("Perimeter of rectangle: "+r.perimeter());   
     }
