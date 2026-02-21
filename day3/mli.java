@@ -28,7 +28,7 @@ class Child extends Parent {
     }
 }
 
-class SubChild extends Child {
+class SubChild extends Child{
     int contact;
 
     SubChild(String name, int age, int roll, int contact) {
