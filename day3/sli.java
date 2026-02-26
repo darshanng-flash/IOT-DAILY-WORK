@@ -1,9 +1,9 @@
 //single level inheritence
 package day3;
-class Parent{
+class Parent3{
     String name;
     int age;
-    Parent(String name, int age){
+    Parent3(String name, int age){
         this.name = name;
         this.age = age;
     }
@@ -11,9 +11,9 @@ class Parent{
         System.out.print(name+" "+age);
     }
 }
-class Child extends Parent{
+class Child6 extends Parent2{
     int roll;
-    Child(String name, int age, int roll){
+    Child6(String name, int age, int roll){
         super(name, age);
         this.roll = roll;
     }
