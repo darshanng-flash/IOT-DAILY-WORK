@@ -8,11 +8,11 @@ class Student1 {
     }
 }
 
-class Department {
+class Department1 {
     String deptName;
     Student1 student;
 
-    Department(String deptName, Student1 student) {
+    Department1(String deptName, Student1 student) {
         this.deptName = deptName;
         this.student = student;
     }
@@ -22,10 +22,10 @@ class Department {
     }
 }
 
-public class prg3 {
+class prg3 {
     public static void main(String[] args) {
         Student1 s = new Student1("Unni");
-        Department d = new Department("ISE", s);
+        Department1 d = new Department1("ISE", s);
         d.show();
     }
 }

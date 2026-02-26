@@ -1,9 +1,9 @@
 //single level inheritence
 package day3;
-class Parent3{
+class Parent2{
     String name;
     int age;
-    Parent3(String name, int age){
+    Parent2(String name, int age){
         this.name = name;
         this.age = age;
     }
