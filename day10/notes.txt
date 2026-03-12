@@ -1,0 +1,48 @@
+ArrayList definition: An ArrayList is a resizable array implementation of the List interface in Java. It allows for dynamic resizing,
+meaning that it can grow or shrink as needed to accommodate the number of elements it contains. 
+ArrayLists provide methods for adding, removing, and accessing elements, and they maintain the order of insertion.
+They are part of the java.util package and are commonly used for storing and manipulating collections of objects.
+Methods:
+1. add(E e): Adds the specified element to the end of the list. Returns true if the element was added successfully.
+2. add(int index, E element): Inserts the specified element at the specified position in the list. Shifts the element currently at that position (if any) and any subsequent elements to the right.
+3. remove(int index): Removes the element at the specified position in the list. Shifts any subsequent elements to the left. Returns the element that was removed from the list.
+4. get(int index): Returns the element at the specified position in the list.   
+5. size(): Returns the number of elements in the list.
+6. clear(): Removes all elements from the list, leaving it empty.
+7. contains(Object o): Returns true if the list contains the specified element.
+8. indexOf(Object o): Returns the index of the first occurrence of the specified element in the list, or -1 if the list does not contain the element.
+9. isEmpty(): Returns true if the list contains no elements.
+10. toArray(): Returns an array containing all of the elements in the list in proper sequence (from first to last element).
+11. set(int index, E element): Replaces the element at the specified position in the list with the specified element. Returns the element previously at the specified position.
+12. subList(int fromIndex, int toIndex): Returns a view of the portion of the list between the specified fromIndex, inclusive, and toIndex, exclusive. The returned list is backed by the original list, so changes to the returned list are reflected in the original list, and vice versa.
+13. iterator(): Returns an iterator over the elements in the list in proper sequence. The returned iterator is fail-fast, meaning that if the list is structurally modified at any time after the iterator is created, in any way except through the iterator's own remove or add methods, 
+the iterator will throw a ConcurrentModificationException.
+14. listIterator(): Returns a list iterator over the elements in the list (in proper sequence). The returned list iterator is fail-fast, meaning that if the list is structurally modified at any time after the iterator is created, in any way except through the iterator's own remove or add methods, 
+the iterator will throw a ConcurrentModificationException.
+15. sort(Comparator<? super E> c): Sorts the list according to the order    induced by the specified Comparator. All elements in the list must be mutually comparable using the specified comparator (that is, c.compare(e1, e2) must not throw a ClassCastException for any elements e1 and e2 in the list).
+ If the specified comparator is null then all elements in the list must implement the Comparable interface and the elements' natural ordering should be used.
+16. toString(): Returns a string representation of the list. The string representation consists of a list of the list's elements in the order they are returned by its iterator, enclosed in square brackets ("[]"). Adjacent elements are separated by the characters ", " (comma and space). 
+Elements are converted to strings as by String.valueOf(Object).
+17. equals(Object o): Compares the specified object with this list for equality. Returns true if and only if the specified object is also a list, both lists have the same size, and all corresponding pairs of elements in the two lists are equal. In other words,
+ two lists are defined to be equal if they contain the same elements in the same order.
+18. hashCode(): Returns the hash code value for this list. The hash code of a list is defined to be the result of the following calculation:
+int hashCode = 1;
+for (E e : this) {
+    int elementHash = (e == null) ? 0 : e.hashCode();
+    hashCode = 31 * hashCode + elementHash;
+}This ensures that list1.equals(list2) implies that list1.hashCode() == list2.hashCode() for any two lists, as required by the general contract of Object.hashCode().   
+19. clone(): Returns a shallow copy of this ArrayList instance. The elements themselves are not cloned, so the new list will contain references to the same objects as the original list. If the original list contains any mutable objects, 
+changes to those objects will be reflected in both lists.
+
+20. ensureCapacity(int minCapacity): Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument. 
+If the current capacity is less than the specified minimum capacity, the capacity is increased by an amount that is sufficient to hold the new minimum capacity. 
+This method does not change the size of the list, but it may increase the internal array size to accommodate future additions.
+21. trimToSize(): Trims the capacity of this ArrayList instance to be the list's current size. An application can use this operation to minimize the storage of an ArrayList instance.
+22. removeRange(int fromIndex, int toIndex): Removes from this list all of the
+    elements whose index is between fromIndex, inclusive, and toIndex, exclusive. Shifts any succeeding elements to the left (reduces their index). This call shortens the list by (toIndex - fromIndex) elements.
+23. forEach(Consumer<? super E> action): Performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception.
+24. replaceAll(UnaryOperator<E> operator): Replaces each element of this list with  the result of applying the operator to that element. Errors or runtime exceptions thrown by the operator are relayed to the caller.
+25. removeIf(Predicate<? super E> filter): Removes all of the elements of this list that satisfy the given predicate. Errors or runtime exceptions thrown by the filter are relayed to the caller.
+26. spliterator(): Creates a late-binding and fail-fast Spliterator over the elements in this list. The Spliterator reports Spliterator.ORDERED, Spliterator.SIZED, and Spliterator.SUBSIZED. The spliterator provides a snapshot of the state of the list when the spliterator was created.
+If the list is structurally modified after the spliterator is created, the behavior of the spliterator is undefined. The spliterator does not support the remove operation.
+

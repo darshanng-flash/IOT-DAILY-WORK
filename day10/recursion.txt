@@ -1,0 +1,21 @@
+Recursion: A programming technique where a function calls itself to solve a problem. It breaks down a complex problem into smaller, similar subproblems.
+Key components of recursion:
+1. Base Case: The condition under which the recursion will stop. It prevents infinite calls and provides a simple solution for the smallest instance of the problem.
+2. Recursive Case: The part of the function that calls itself with modified arguments, moving towards the base case.
+Example of a recursive function to NUMBERS from 5 to 1:
+public class RecursionExample {
+    public static void main(String[] args) {
+        printNumbers(5);
+    }
+
+    public static void printNumbers(int n) {
+        // Base case: when n is 0, stop the recursion
+        if (n == 0) {
+            return;
+        }
+        // Print the current number
+        System.out.println(n);
+        // Recursive call with n-1
+        printNumbers(n - 1);
+    }
+}
