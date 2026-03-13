@@ -64,6 +64,19 @@ public class sll {
             }
             head=head.next;
         }   
+        // reversal of the linked list
+        void reverse(){
+            Node prev=null;
+            Node current=head;
+            Node next=null;
+            while(current!=null){
+                next=current.next;
+                current.next=prev;
+                prev=current;
+                current=next;
+            }
+            head=prev;
+        }
 
 
     void display(){
@@ -81,6 +94,7 @@ public class sll {
         list.insert_at_beginning(50);
         list.remove_last();
         list.remove_first();
+        list.reverse();
         System.out.println("Linked List:");
         list.display();
     }
