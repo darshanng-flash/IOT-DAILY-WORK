@@ -1,0 +1,193 @@
+SDLC (Software Development Life Cycle)
+
+SDLC = Process used to develop software in a structured way.
+
+1. Waterfall Model
+- Linear and sequential approach
+
+Terminologies:
+- BI  = Business Intelligence
+- CRS = Client Requirement Specification
+- SRS = Software Requirement Specification
+
+Flow:
+Client -> CRS -> SRS
+
+Phases:
+1. Requirement Analysis
+2. Design
+3. Coding / Implementation
+4. Testing
+   - Manual Testing
+   - Automation Testing
+5. Deployment
+6. Maintenance
+
+Tools:
+- SEM -> Git (Version Control)
+
+
+2. Agile model
+
+- Work is divided into smaller parts
+
+n = number of smaller chunks
+Each chunk = Sprint
+
+Features:
+- Iterative development
+- Faster delivery
+- Continuous feedback
+
+FULL STACK DEVELOPMENT
+
+1. Frontend
+- HTML       -> Structure
+- CSS        -> Styling / Design
+- JavaScript -> Functionality
+
+HTML (HyperText Markup Language)
+
+- Invented by Tim Berners-Lee (1991)
+- WWW = World Wide Web
+
+Basic Concepts:
+- HTML  -> Structure
+- HTTP  -> Communication Protocol
+- URL   -> Addressing System
+
+Versions:
+- HTML
+- HTML3
+- HTML5
+
+
+Basic HTML Structure:
+<!DOCTYPE html>
+
+
+Common HTML Tags:
+Headings:
+<h1> to <h6>
+
+Text:
+<p>        -> Paragraph
+<span>     -> Styling small portion
+<div>      -> Container
+<pre>      -> Preserves formatting
+
+Formatting:
+<center>   -> Center align (deprecated)
+<hr>       -> Horizontal line
+<br>       -> Line break
+
+Links:
+<a>        -> Anchor tag (hyperlink)
+
+
+Tables in HTML:
+<table>    -> Table
+<tr>       -> Row
+<th>       -> Header cell
+<td>       -> Data cell
+<caption>  -> Table title
+rowspan    -> Merge rows
+colspan    -> Merge columns
+
+
+Forms in HTML:
+<form> -> Main container to collect user input
+
+Attributes:
+- action -> Where data is sent
+- method -> GET / POST
+
+Input Types:
+<input type="text">       -> Text input
+<input type="password">   -> Hidden text
+<input type="radio">      -> Single selection
+<input type="checkbox">   -> Multiple selection
+<input type="submit">     -> Submit form
+
+Other Elements:
+<textarea> -> Multi-line input
+<select>   -> Dropdown
+<option>   -> Items inside dropdown
+<button>   -> Clickable button
+
+CSS (Cascading Style Sheets)
+
+Purpose:
+- Styling webpages
+- Enhances look and feel
+- Separates design from HTML
+
+Advantages:
+- Reduces repetition (reusable styles)
+- Makes website responsive & mobile-friendly
+- Faster loading (less inline styling)
+- Easy to maintain and update
+CSS Syntax:
+selector {
+    property: value;
+}
+
+Example:
+h1 {
+    color: blue;
+}
+
+selectors and types:
+1. universal selector
+* {
+    property: value;
+}
+
+2. type selector / element selector
+p {
+    property: value;
+}
+
+3. class selector
+.class_name {
+    property: value;
+}
+
+4. id selector
+#id_name {
+    property: value;
+}
+
+comments in css
+single line and multi line -> /* comment */
+
+colors in css:
+1. color names -> color: red;
+2. hex color -> #ff5371;
+3. rgb -> rgb(255,2,2);
+4. rgba -> rgba(red, green, blue, alpha)
+5. hsl -> hsl(hue, saturation, lightness)
+6. hsla -> hsl(hue, saturation, lightness, alpha)
+
+text styling:
+1. font-family
+2. font-size
+3. font-weight
+4. text-decoration
+5. text-shadow
+6. letter-spacing
+7. word-spacing
+
+background:
+background-color
+background-image
+background-repeation
+
+css box model:
+height
+width
+border
+margin
+padding
+
+ 
